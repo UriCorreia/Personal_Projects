@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +15,8 @@ body{
     background-position: center;
     font-family: 'Work Sans', sans-serif;
 }
+
+/* \/\/\/\/\/\/\/ Login */
 
 .login_container{
     text-align: center;
@@ -95,5 +99,52 @@ button:hover{
     justify-items: center;
     align-items: center;
     margin-top: 10px;
+    font-size: 13px;
+}
+
+/* \/\/\/\/\/\/\/ Login */
+
+.forget_container {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    color: white;
+    display: flex;
+    border: 1px solid rgb(	216, 191, 216);
+    border-radius: 10px;
+    width: 300px;
+    padding: 30px 40px;
+    box-shadow: 0 5px 10px rgba(102, 51, 153, 0.529);
+}
+
+.forget_container h1 {
+    font-size: 36px;
+    padding: 16px;
+}
+
+.forget_container h2 {
+    padding: 16px;
+    text-decoration: underline;
+}
+
+.forget_boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.forget_boxes input {
+    border-radius: 10px;
+    border: none;
+    padding: 5px 50px;
+}
+
+.forget_button {
+    margin: 10px;
+}
+
+.forget_register {
     font-size: 13px;
 }
