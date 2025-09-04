@@ -9,7 +9,10 @@ body {
     font-weight: weight;
     font-style: normal;
 
-    background-image: linear-gradient(140deg, #130443, #63cef5);
+    background-image:
+        linear-gradient(140deg, #130443, #63cef5); 
+
+    background-repeat: no-repeat;
     min-height: 100vh;
 
     display: flex;
@@ -18,16 +21,18 @@ body {
 }
 
 .container {
-    background-image: linear-gradient(140deg, #63cef5, #130443);
-
+    background-image: 
+        linear-gradient(140deg, rgba(19,4,67,0.9), rgba(99,206,245,0.9)),
+        url("https://i.pinimg.com/736x/5d/ee/fc/5deefcac4a436616a249ed3568dc668a.jpg");
+        
 
     text-align: center;
     align-items: center;
     width: 500px;
 
-    border: 1px solid black;
-    border-radius: 15px;
-    box-shadow: 10px 20px 30px rgba(27, 1, 52, 0.529);
+    border: none;
+    border-radius: 12px;
+    box-shadow: -10px -10px 35px rgba(27, 1, 52, 0.529);
 
     color: white;
     padding: 20px 30px;
@@ -35,15 +40,39 @@ body {
 
 h1 {
     margin: 20px;
+    margin-bottom: 40px;
+    font-size: 45px;
+    text-decoration: none;
 }
 
 .boxes {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .boxes input {
-    padding: 5px 30px;
-    border-radius: 20px;
+    padding: 10px 30px;
+
+    border-radius: 13px;
     border: none;
+}
+
+button {
+    padding: 15px 35px;
+
+    border: none;
+    border-radius: 12px;
+
+    font-size: 17px;
+
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    color: white;
+
+    background-color: transparent;
+    border: 1px solid rgba(27, 1, 52, 0.529);
 }
