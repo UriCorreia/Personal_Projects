@@ -6,26 +6,46 @@
     <title>Formulário</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 <body>
     <div class="container">
         <h1>
             Registration Form
         </h1>
         <div class="boxes">
-            <input placeholder="Enter your Name" type="text" required>
 
-            <input placeholder="Enter your Username" type="text" required>
+            <div class="input-box">
+                <input placeholder="Enter your Name" type="text" required>
+                <i class="bx bx-user"> </i>
+            </div>
+            
+            <div class="input-box">
+                <input placeholder="Enter your Username" type="text" required>
+                <i class="bx bx-user-circle"></i>
+            </div>
 
-            <input placeholder="Enter your E-mail" type="email" required>
+            <div class="input-box">
+                <input placeholder="Enter your E-mail" type="email" required>
+                <i class="bx bx-at"></i>
+            </div>
 
-            <input placeholder="Enter your phone number" type="tel" required>
+            <div class="input-box">
+                <input placeholder="Enter your phone number" type="tel" required>
+                <i class="bx bx-phone"></i>
+            </div>
 
-            <input placeholder="Create your password access" type="password" required>
+            <div class="input-box">
+                <input placeholder="Create your password access" type="password" required>
+                <i class="bx bx-lock"></i>
+            </div>
 
-            <input placeholder="Confirm password" type="password" required>
+            <div class="input-box">
+                <input placeholder="Confirm password" type="password" required>
+                <i class="bx bx-lock"></i>
+            </div>
 
-            <div>
-                <label for="">Gender</label>
+            <div class="gender">
+                <label for="">Gender</label> <br>
                 <input type="radio" name="gender" value="Male">Male 
                 <input type="radio" name="gender" value="Female">Female
                 <input type="radio" name="gender" value="Other">Other

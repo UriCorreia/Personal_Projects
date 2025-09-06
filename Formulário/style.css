@@ -58,6 +58,29 @@ h1 {
     border: none;
 }
 
+.input-box {
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 40px 10px 15px; 
+    border-radius: 13px;
+    border: none;
+    box-sizing: border-box; 
+}
+
+
+.input-box i {
+    position: absolute;
+    top: 50%; 
+    right: 15px; 
+    transform: translateY(-50%); 
+    font-size: 18px;
+    color: rgb(125, 148, 177);
+    pointer-events: none; 
+}
+
 button {
     padding: 15px 35px;
 
@@ -75,4 +98,9 @@ button:hover {
 
     background-color: transparent;
     border: 1px solid rgba(27, 1, 52, 0.529);
+}
+
+
+.gender label{
+    font-size: 18px;
 }
