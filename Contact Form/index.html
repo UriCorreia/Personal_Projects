@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap">
 </head>
 <body>
 
-    <form action="">
+    <form action="" novalidate>
         
         <h1>
             Contact Us
@@ -33,7 +34,7 @@
         <div class="radio"> 
 
             <div class="radio_group">
-                <input type="radio" name="Query Type" value="General Enquiry">General Enquiry
+                <input type="radio" name="Query Type" value="General Enquiry" required>General Enquiry
             </div>
             <div class="radio_group">
                 <input type="radio" name="Query Type" value="Support Request">Support Request
@@ -41,7 +42,7 @@
 
         </div>
 
-        <textarea placeholder="Message"></textarea>
+        <textarea placeholder="Message" required></textarea>
 
         <div class="agree">
             

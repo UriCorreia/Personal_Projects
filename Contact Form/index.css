@@ -1,23 +1,39 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
 
+    background-color: #8fbf9f44;
+
     min-height: 100vh;
 
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
 }
 
 form {
     width: 500px;
-    border: 1px solid black;
+    border: none;
+    border-radius: 8px;
     padding: 40px 20px;
 
+    background-color: #f5ecd783;
+
     display: relative;
+}
+
+input,
+textarea,
+button {
+    border-radius: 5px;
+    border: 1px solid #5f5f5f6b;
 }
 
 form h1 {
@@ -38,7 +54,7 @@ form h1 {
 }
 
 .email input {
-    width: 99.3%;
+    width: 100%;
     padding: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -57,7 +73,9 @@ form h1 {
     padding: 5px;
     width: 100%;
 
-    border: 1px solid black;
+    border: 1px solid #5f5f5f6b;
+    border-radius: 5px;
+
 }
 
 textarea {
@@ -65,6 +83,8 @@ textarea {
     height: 100px;
     padding: 5px;
     margin-top: 15px;
+
+
 }
 
 .agree {
@@ -78,8 +98,41 @@ textarea {
 button {
     width: 100%;
     padding: 10px;
-    margin-top: 10px
+    margin-top: 10px;
+    
+    background: #68a67d;
+    
+    color: white;
+    font-size: 20px;
+    
+    cursor: pointer;
 }
 
+button:hover {
+    background-color: #24613b;
+}
+
+input:hover,
+.radio_group:hover,
+textarea:hover{
+    border: 1px solid #24613b;
+}
+
+input:focus,
+.radio_group:focus,
+textarea:focus {
+    outline: none;
+    border: 1px solid #24613b;
+}
+
+input:user-invalid,
+textarea:user-invalid {
+    border-color: #830000; 
+}
+
+input:user-invalid:focus,
+textarea:user-invalid:focus {
+    border-color: #830000; 
+}
 
 
