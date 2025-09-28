@@ -1,3 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+
+    background-image: url(/img/background_4.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+}
+
+.container {
+    background-color: white;
+
+    border: none;
+    border-radius: 20px;
+    box-shadow: 15px 25px 25px rgba(81, 81, 81, 0.150) ;
+
+    padding: 20px;
+    max-width: 450px;
+    width: 90%;
+    height: 350px;
+}
+
+.title,
+.first_FAQ, 
+.second_FAQ, 
+.third_FAQ, 
+.fourth_FAQ, 
+.fifth_FAQ, 
+.sixth_FAQ {
+    display: flex;
+    align-items: center;
+
+    padding: 8px;
+} 
+
+.first_FAQ, 
+.second_FAQ, 
+.third_FAQ, 
+.fourth_FAQ, 
+.fifth_FAQ, 
+.sixth_FAQ {
+    justify-content: space-between;
+} 
+
 i {
     color: black;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.title {
+    gap: 20px;
+}
+
+h2 {
+    font-size: 19px;
+}
+
+p {
+    display: flow-root;
 }
