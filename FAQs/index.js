@@ -2,7 +2,7 @@ const container = document.querySelector(".container");
 
 const showResponse = (event) => {
 
-    if(event.target.classList.contains("bx-plus")){
+    if(event.target.classList.contains("event")){
 
         const pResponse = event.target.parentElement.querySelector("p");
 
@@ -40,7 +40,7 @@ const showResponse = (event) => {
 };
 
 const hidingResponse = (event) => {
-    if(event.target.classList.contains("bx-plus")){
+    if(event.target.classList.contains("event")){
         const pResponse = event.target.parentElement.querySelector("P");
         if(pResponse){
             pResponse.textContent = "";
